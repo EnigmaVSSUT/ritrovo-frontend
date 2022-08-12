@@ -12,7 +12,7 @@ const lightPalette = {
 	},
 	secondary: {
 		main: '#D6D6D6'
-	}
+	},
 }
 
 export default lightPalette
