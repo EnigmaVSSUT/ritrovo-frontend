@@ -12,7 +12,10 @@ const darkPalette = {
 	},
 	secondary: {
 		main: '#424242'
-	}
+	},
+	divider: {
+		main: '#FFFFFF'
+	},
 }
 
 export default darkPalette
