@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { useContext } from "react";
+import Layout from "../components/common/layout/Layout";
 import { ThemeContext } from "../theme/RitrovoThemeContext";
 
 const Home = () => {
@@ -9,14 +10,12 @@ const Home = () => {
 	return (
 		<>
 			<Typography>Hehe</Typography>
-			<Button
-				variant='contained'
-				onClick={toggleThemeMode}
-			>
-				Switch theme
-			</Button>
 		</>
 	)
 }
+
+Home.getLayout = (page) => (
+	<Layout>{ page }</Layout>
+)
  
 export default Home;
