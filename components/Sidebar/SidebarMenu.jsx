@@ -5,7 +5,7 @@ import { ListItem } from "@mui/material";
 import { ListItemButton } from "@mui/material";
 import { ListItemIcon } from "@mui/material";
 import { ListItemText } from "@mui/material";
-import MenuOptions from "../../data/menu-options";
+import MenuOptions from "../../lib/data/menu-options";
 import React, { useState } from "react";
 import { Card } from "@mui/material";
 
