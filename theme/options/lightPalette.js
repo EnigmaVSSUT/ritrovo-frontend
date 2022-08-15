@@ -1,6 +1,6 @@
 const lightPalette = {
 	background: {
-		paper: '#D6D6D6',
+		paper: '#F5F5F5',
 		default: '#FFFFFF'
 	},
 	text: {
