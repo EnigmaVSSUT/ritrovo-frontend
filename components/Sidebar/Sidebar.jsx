@@ -5,6 +5,7 @@ import { Card, Drawer } from "@mui/material";
 import React from "react";
 import SidebarAccount from "./SidebarAccount";
 import SidebarMenu from "./SidebarMenu";
+import ThemeSwitcher from "../common/ThemeSwitcher"
 
 const Sidebar = () => {
 
@@ -19,6 +20,7 @@ const Sidebar = () => {
 				<Typography fontWeight={700}>Ritrovo</Typography>
 			</Toolbar>
 			<SidebarMenu />
+			<ThemeSwitcher />
 			<SidebarAccount />
 		</Drawer>
 	);

@@ -27,7 +27,7 @@ const ExpandMore = styled((props) => {
 	}),
 }));
 
-export default function Feed({index}) {
+export default function Feed() {
 	const [expanded, setExpanded] = React.useState(false);
 
 	const handleExpandClick = () => {
@@ -35,7 +35,7 @@ export default function Feed({index}) {
 	};
 
 	return (
-		<Grid item key={index} xs={6}>
+		<Grid item xs={6}>
 			<Card>
 				<CardMedia
 					component="img"
