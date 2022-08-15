@@ -11,27 +11,27 @@ const MenuOptions = [
 	{
 		title: "Home",
 		icon: <HomeRounded color="primary" />,
-		link: "/",
+		link: "",
 	},
 	{
 		title: "Messages",
 		icon: <MessageRounded color="primary" />,
-		link: "/messages",
+		link: "messages",
 	},
 	{
 		title: "Profile",
 		icon: <AccountCircleRounded color="primary" />,
-		link: "/profile",
+		link: "profile",
 	},
 	{
 		title: "Posts",
 		icon: <PostAddRounded color="primary" />,
-		link: "/posts",
+		link: "posts",
 	},
 	{
 		title: "Settings",
 		icon: <SettingsRounded color="primary" />,
-		link: "/settings",
+		link: "settings",
 	},
 ];
 

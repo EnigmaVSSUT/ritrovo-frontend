@@ -9,7 +9,7 @@ import SidebarMenu from "./SidebarMenu";
 const Sidebar = () => {
 
 	return (
-		<Card elevation={5} sx={{ height: "100%" }}>
+		<Card elevation={4} sx={{ height: "100%" }}>
 			<Toolbar>
 				<Adb />
 				<Typography fontWeight={700}>Ritrovo</Typography>
