@@ -1,13 +1,14 @@
-import DefaultLayout from "../components/layout/DefaultLayout";
-import HomePage from "../components/Home/HomePage";
+import { Stack } from "@mui/material";
+import HeroContent from "../components/LandingPage/HeroContent";
+import NavBar from "../components/LandingPage/NavBar";
 
-const Home = () => {
-
+const LandingPage = () => {
 	return (
-		<HomePage />
+		<Stack>
+			<NavBar />
+			<HeroContent />
+		</Stack>
 	);
-};
+}
 
-Home.getLayout = (page) => <DefaultLayout>{page}</DefaultLayout>;
-
-export default Home;
+export default LandingPage;
