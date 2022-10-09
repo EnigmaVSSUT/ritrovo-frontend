@@ -3,8 +3,6 @@ import { styled, Stack } from "@mui/material";
 import { MAIN_SIDEBAR_WIDTH } from "../../lib/constants/constants";
 import Sidebar from "../Sidebar/Sidebar";
 
-const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
-
 const DefaultLayout = ({ children }) => {
 	return (
 		// <Grid container columnSpacing={2} minHeight='100vh'>
