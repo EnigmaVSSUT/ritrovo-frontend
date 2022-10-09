@@ -1,7 +1,11 @@
+import ProfileForm from "../components/signup/ProfileForm";
+import SignUpForm from "../components/signup/SignUpForm";
+
 const Signin = () => {
 	return (
 		<div>
-			Sign in
+			<SignUpForm />
+			<ProfileForm />
 		</div>
 	);
 }
