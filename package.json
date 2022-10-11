@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@fontsource/plus-jakarta-sans": "^4.5.9",
+    "@fontsource/poppins": "^4.5.10",
+    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.10.0",
+    "@mui/material": "^5.10.8",
+    "@mui/styles": "^5.10.8",
     "next": "12.2.4",
     "next-auth": "^4.10.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-font": "^1.2.1",
+    "react-router-dom": "^6.4.2",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "eslint": "8.21.0",
