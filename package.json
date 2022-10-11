@@ -17,7 +17,9 @@
     "next": "12.2.4",
     "next-auth": "^4.10.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "eslint": "8.21.0",
