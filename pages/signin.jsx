@@ -1,14 +1,13 @@
 import React from "react";
-import { TextField,Button,Typography,Grid,Toolbar,CssBaseline,Box} from "@mui/material";
-import { makeStyles} from '@material-ui/core/styles' ;
+import { TextField,Button,Typography,Grid,Toolbar,CssBaseline} from "@mui/material";
+import { makeStyles} from '@mui/styles' ;
 import { BsArrowRightShort } from 'react-icons/bs';
 import Image from 'next/image';
 import MainPic from '../public/img.svg';
 import logo from '../public/logo.png';
 import "@fontsource/poppins";
 
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	mainn:{
 	  background:'#ffffff',
 	  fontFamily:'Poppins',	
@@ -28,9 +27,9 @@ const useStyles = makeStyles((theme) => ({
 		color: "#000000",
 		fontWeight:'700',
 		fontSize:'54px',
-		marginTop:theme.spacing(4),
-		marginLeft: theme.spacing(4),
-		marginBottom: theme.spacing(5),
+		marginTop:32,
+		marginLeft: 32,
+		marginBottom: 40,
 		fontFamily:"poppins",
 		marginBottom :"65px",
 	  },
@@ -38,13 +37,13 @@ const useStyles = makeStyles((theme) => ({
 		color: "#000000",
 		fontWeight:'600',
 		fontSize:'20px',
-		marginTop:theme.spacing(4),
-		marginLeft: theme.spacing(4),
+		marginTop:32,
+		marginLeft: 32,
 		fontFamily:"poppins"
 	  },
 	  tf: {
-		marginLeft: theme.spacing(4),
-		marginRight: theme.spacing(4),
+		marginLeft:32,
+		marginRight:32,
 		borderRadius:'10px',
 		background:'#FAFBFF',
 		fontFamily:"poppins"
@@ -53,9 +52,9 @@ const useStyles = makeStyles((theme) => ({
 		color: "#000000",
 		fontWeight:'500',
 		fontSize:'18px',
-		marginTop:theme.spacing(3),
-		marginLeft: theme.spacing(4),
-		marginBottom: theme.spacing(4.5),
+		marginTop:24,
+		marginLeft: 32,
+		marginBottom:36,
 		fontFamily:"poppins"
 	  },
 	link1: {
@@ -65,11 +64,11 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius:'18px',
 		fontWeight:'500',
 		fontSize:'30px',
-		padding:theme.spacing(0.7, 1.5),
-		marginTop:theme.spacing(2.7),
-		marginRight:theme.spacing(4),	
-		marginLeft: theme.spacing(4),
-		marginBottom: theme.spacing(2),
+		padding:5.6,
+		marginTop:21.6,
+		marginRight:32,	
+		marginLeft: 32,
+		marginBottom: 16,
 		boxShadow: '1px 8px 7px 0px #287EFF80',
 		"&:hover": {
 		  color: "#bfbfbf",
@@ -80,8 +79,8 @@ const useStyles = makeStyles((theme) => ({
 		color: "#000000",
 		fontWeight:'500',
 		fontSize:'18px',
-		marginTop:theme.spacing(5),
-		marginLeft: theme.spacing(4),
+		marginTop:40,
+		marginLeft: 32,
 		fontFamily:"poppins"
 	  },
 	  img:{
@@ -95,7 +94,6 @@ const Signin = () => {
 	const classes = useStyles();
     
 	return (
-		
 		
 		<Grid className={classes.mainn}>
 			<getTheme/>
@@ -136,8 +134,6 @@ const Signin = () => {
 			</Grid>
 		</Grid>
 		</Grid>
-
-	
 	);
 }
 
