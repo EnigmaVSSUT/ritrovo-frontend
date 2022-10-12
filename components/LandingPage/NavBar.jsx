@@ -90,4 +90,4 @@ function NavBar() {
 
 	);
 }
-export default NavBar;3
+export default NavBar;
