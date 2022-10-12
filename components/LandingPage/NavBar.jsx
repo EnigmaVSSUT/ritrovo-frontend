@@ -5,6 +5,7 @@ import Image from 'next/image';
 import NavLogo from '/public/nav_logo.png';
 import "@fontsource/poppins";
 import { MuiDrawer } from "./MuiDrawer";
+import Link from 'next/link'
 
 const useStyles = makeStyles(() => ({
 	nav_links: {
@@ -73,10 +74,14 @@ function NavBar() {
 				<Typography variant="h4" className={classes.logo}>Ritrovo</Typography>
 				<Grid className={classes.nav_links} >
 					<Box display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
-						<a href="/" className={classes.link}>Home</a>
-						<a href="/about" className={classes.link}>About Us</a>
-						<a href="/contact" className={classes.link}>Contact Us</a>
-						<a href="/faq" className={classes.link1}>Sign In</a>
+					<Link href="/">
+						<a className={classes.link}>Home</a></Link>
+						<Link href="/about">
+						<a  className={classes.link}>About Us</a></Link>
+						<Link href="/contact">
+						<a  className={classes.link}>Contact Us</a></Link>
+						<Link href="/faq">
+						<a  className={classes.link1}>Sign In</a></Link>
 					</Box>
 				</Grid>
 				<MuiDrawer />
@@ -85,4 +90,4 @@ function NavBar() {
 
 	);
 }
-export default NavBar;
+export default NavBar;3

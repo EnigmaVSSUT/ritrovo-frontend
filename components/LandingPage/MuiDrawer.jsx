@@ -3,6 +3,7 @@ import { Drawer, Box, Typography, IconButton, Grid, CssBaseline } from '@mui/mat
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
 import { makeStyles } from "@mui/styles";
+import Link from 'next/link'
 const useStyles1 = makeStyles(() => ({
   nav_links: {
     marginLeft: 80,
@@ -68,10 +69,14 @@ export const MuiDrawer = () => {
         onClose={() => setIsDrawerOpen(false)}>
         <Box width='200px' role='presentation' textAlign='left' >
           <Grid className={classes.nav_links} >
-            <a href="/" className={classes.link}>Home</a>
-            <a href="/about" className={classes.link}>About Us</a>
-            <a href="/contact" className={classes.link}>Contact Us</a>
-            <a href="/faq" className={classes.link1}>Sign In</a>
+          <Link href="/">
+						<a className={classes.link}>Home</a></Link>
+						<Link href="/about">
+						<a  className={classes.link}>About Us</a></Link>
+						<Link href="/contact">
+						<a  className={classes.link}>Contact Us</a></Link>
+						<Link href="/faq">
+						<a  className={classes.link1}>Sign In</a></Link>
           </Grid>
         </Box>
       </Drawer>
