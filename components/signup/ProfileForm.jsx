@@ -1,9 +1,9 @@
 import React from "react";
 import { TextField,Button,Typography,Grid,Toolbar,CssBaseline} from "@mui/material";
-import { makeStyles } from '@material-ui/core/styles' ;
+import { makeStyles } from '@mui/styles';
 import Image from 'next/image';
 import MainPic from '/public/img.svg';
-import logo from '/public/logo.png';
+import logo from '/public/nav_logo.png';
 import "@fontsource/poppins";
 const useStyles = makeStyles(() => ({
 	first: {
@@ -25,8 +25,9 @@ const useStyles = makeStyles(() => ({
 		color: "#000000",
 		fontWeight:'700',
 		fontSize: '54px',
-		marginTop: 20,
-		marginleft: 32,
+		marginTop: 25,
+		marginleft: 30,
+		marginBottom: 40,
 		marginBottom: "55px",
 		fontFamily:"poppins"
 	  },
@@ -35,12 +36,12 @@ const useStyles = makeStyles(() => ({
 		fontWeight:'600',
 		  fontSize: '20px',
 		  marginTop: 33,
-		
+		marginLeft: 5,
 		fontFamily:"poppins"
 	  },
 	second: {
-		marginleft: 32,
-		marginRight:32,
+		marginleft: 35,
+		marginRight:35,
 		borderRadius:'10px',
 		background:'FAFBFF',
 		fontFamily:"poppins"
@@ -56,9 +57,9 @@ const useStyles = makeStyles(() => ({
 		borderRadius:'20px',
 		fontWeight:'500',
 		fontSize:'30px',
-		marginTop: 21.6,
-		marginRight: 32,
-		marginLeft: 2,
+		marginTop: 30,
+		marginRight: 30,
+		marginLeft: 4,
 		marginBottom:16,
 		boxShadow: '1px 8px 7px 0px #287EFF80',
 		"&:hover": {
