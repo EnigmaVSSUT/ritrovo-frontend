@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
 	color:'#000000',
 	fontSize:'28px',
 	fontWeight:'900',
-	paddingBottom: "10px",
+	paddingBottom: "15px",
 	marginLeft:'20px',
 	marginTop: '10px',
 	},
