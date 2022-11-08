@@ -11,7 +11,7 @@ const ThemeSwitcher = () => {
 		<IconButton
 			onClick={toggleThemeMode}
 			color="primary"
-			sx={{ position: "fixed", top: "0px", right: "0px", margin: "2px" }}
+			sx={{ position: "relative", top: "0px", right: "0px", margin: "2px" }}
 		>
 			{themeMode === "light" ? <DarkModeRounded /> : <LightModeRounded />}
 		</IconButton>
