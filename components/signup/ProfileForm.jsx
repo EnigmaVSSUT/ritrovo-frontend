@@ -1,144 +1,66 @@
 import React from "react";
 import { TextField,Button,Typography,Grid,Toolbar,CssBaseline} from "@mui/material";
-import { makeStyles } from '@mui/styles';
+//import { makeStyles } from '@mui/styles';
 import Image from 'next/image';
 import MainPic from '/public/img.svg';
 import logo from '/public/nav_logo.png';
 import "@fontsource/poppins";
-const useStyles = makeStyles(() => ({
-	first: {
-	  background:'#ffffff',
-	  fontFamily:'Poppins',	
-	},
-   logo: {
-	flexGrow: "1",
-    cursor: "pointer",
-	color:'#000000',
-	fontSize:'28px',
-	fontWeight:'900',
-	paddingBottom: "15px",
-	marginLeft:'20px',
-	marginTop: '10px',
-	},
-	title: {
-		textDecoration: "none",
-		color: "#000000",
-		fontWeight:'700',
-		fontSize: '54px',
-		marginTop: 25,
-		marginleft: 30,
-		marginBottom: 40,
-		marginBottom: "55px",
-		fontFamily:"poppins"
-	  },
-	  content: {
-		color: "#000000",
-		fontWeight:'600',
-		  fontSize: '20px',
-		  marginTop: 33,
-		marginLeft: 5,
-		fontFamily:"poppins"
-	  },
-	second: {
-		marginleft: 35,
-		marginRight:35,
-		borderRadius:'10px',
-		background:'FAFBFF',
-		fontFamily:"poppins"
-	  },
-	  
-	regibutton: {
-		textDecoration: "none",
-		padding:"10px",
-		height: "50px",
-		width:"200px",
-	    color: "#ffffff",
-		background:'#287EFF',
-		borderRadius:'20px',
-		fontWeight:'500',
-		fontSize:'30px',
-		marginTop: 30,
-		marginRight: 30,
-		marginLeft: 4,
-		marginBottom:16,
-		boxShadow: '1px 8px 7px 0px #287EFF80',
-		"&:hover": {
-		  color: "#bfbfbf",
-		  fontFamily:"poppins"
-	  },
-	},
-	new: {
-		color: "#000000",
-		fontWeight:'500',
-		fontSize: '18px',
-		marginTop: 40,
-		marginleft:32,
-		fontFamily:"poppins"
-	},
-	contained: {
-		padding:"1opx"
-	},
-	img: {
-		position: "relative",
-		bottom:"40px"
-	}
-  }));
+
 const ProfileForm = () => {
-	const classes = useStyles();
+	
 	return (
-		<Grid className={classes.first}>
+		<Grid >
 			
 			<CssBaseline />
 			<Toolbar sx={{
-				marginTop:"5px",marginLeft:"6px",position:"sticky"}}>
+				marginTop:"5px",marginLeft:"2px",position:"sticky"}}>
 			<Image src={logo} alt="IMAGE" height="40px" width="40px"/>
-			<Typography variant="h4" className={classes.logo}>
+			<Typography variant="h5" sx={{marginLeft:"20px", fontWeight:"700" }}>
 			 Ritrovo
 			</Typography>
 			</Toolbar>
 			
 		   <Grid container height="100%">
 				<Grid item xs={12} md={5.7} mx="18px">
-			<Typography variant="h3" gutterBottom className={classes.title}>Profile Details</Typography>
+			<Typography gutterBottom sx={{fontWeight:"700",fontSize:"48px",marginTop:"20px", marginBottom:"30px"}}>Profile Details</Typography>
 			
-				<Typography variant="h6" gutterBottom className={classes.content}>Name</Typography>
-					<TextField size="small" className={classes.second} sx={{
+				<Typography  gutterBottom sx={{fontWeight:"600",fontSize:"20px" ,marginBottom:"20px"}}>Name</Typography>
+					<TextField size="small"  sx={{
 						                                              width: {
 							                                          xs: 300,
-							                                           sm: 480,
+					sm: 480,
+																	   marginBottom:"25px"
 						}
 					}} />
-					<Typography variant="h6" gutterBottom className={classes.content}>Registration Number</Typography>
-					<TextField size="small" className={classes.second} sx={{
+					<Typography variant="h6" gutterBottom sx={{fontWeight:"600",fontSize:"20px",marginBottom:"20px"}}>Registration Number</Typography>
+					<TextField size="small" sx={{
 						                                              width: {
 							                                          xs: 300,
-							                                           sm: 480,
+							sm: 480,marginBottom:"25px"
+																	   
 						}
 					}} />
-					<Typography variant="h6" gutterBottom className={classes.content}>Graduation Year</Typography>
-					<TextField size="small" className={classes.second} sx={{
+					<Typography variant="h6" gutterBottom sx={{fontWeight:"600",fontSize:"20px",marginBottom:"20px"}}>Graduation Year</Typography>
+					<TextField size="small"  sx={{
 						                                              width: {
 							                                          xs: 300,
-							                                           sm: 480,
+							                                           sm: 480,marginBottom:"25px"
 						}
 					}} />
-					<Typography variant="h6" gutterBottom className={classes.content}>Branch</Typography>
-					<TextField size="small" className={classes.second} sx={{
+					<Typography variant="h6" gutterBottom sx={{fontWeight:"600",fontSize:"20px",marginBottom:"20px"}}>Branch</Typography>
+					<TextField size="small"  sx={{
 						                                              width: {
 							                                          xs: 300,
-							                                           sm: 480,
+							                                           sm: 480,marginBottom:"25px"
 						}
 					}} />
-					
-					<Button variant="contained" className={classes.regibutton}>Register </Button>
+					<br />
+					<Button variant="contained" sx={{textTransform:"capitalize",
+					backgroundColor:"#287EFF",borderRadius:"23px",padding:"10px",width:"200px",fontSize:"20px",marginBottom:"20px" }}>Register</Button> 
 					
 				
 			</Grid>
-				<Grid item md={6} className={classes.img} display={{
-					xs: 'none',
-					sm: 'none',
-					md: 'none',
-					lg:'block'	
+				<Grid item md={6}  display={{ xs: 'none', sm:'none', md: 'none',lg:'none',xl:'block'
 				}}>
 			<Image src={MainPic} alt="IMAGE" height="640px"/>
 			</Grid>
