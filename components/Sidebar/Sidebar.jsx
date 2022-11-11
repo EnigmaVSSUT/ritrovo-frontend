@@ -17,7 +17,7 @@ const Sidebar = () => {
 			PaperProps={{
                 sx:{
                     backgroundColor:"background.default",
-                    width:"287px"
+                    width:"250px"
                 }}}
 			>
 			<Toolbar sx={{marginTop:"15px",marginLeft:"-10px"}}>
