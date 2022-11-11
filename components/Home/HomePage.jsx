@@ -16,9 +16,7 @@ const HomePage = () => {
 			<Grid item xs={4}>
 				<Stack height="100%">
 					<EventsList />
-
 					<Divider variant="middle" />
-
 					<LatestPost />
 				</Stack>
 			</Grid>
