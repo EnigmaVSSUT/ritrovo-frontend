@@ -1,52 +1,8 @@
-
 import { Drawer, Box, Typography, IconButton, Grid, CssBaseline } from '@mui/material'
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
-import { makeStyles } from "@mui/styles";
 import Link from 'next/link'
-const useStyles1 = makeStyles(() => ({
-  nav_links: {
-    marginLeft: 80,
-    display: "flex",
-    flexDirection: "column"
-  },
-  link: {
-    textDecoration: "none",
-    color: "#000000",
-    fontWeight: '600',
-    fontSize: '20px',
-    marginTop: 20,
-    marginBottom:16,
-    "&:hover": {
-      color: "#287EFF",
-      borderBottom: "1px solid #287EFF",
-    },
-  },
-  link1: {
-    position: "relative",
-    right: "8px",
-    textDecoration: "none",
-    color: "#ffffff",
-    background: '#287EFF',
-    borderRadius: '15px',
-    fontWeight: '500',
-    fontSize: '17.5px',
-    paddingTop: 8,
-    paddingLeft:32,
-    paddingBottom: 8,
-    paddingRight:32,
-    marginTop: 12,
-    marginBottom: 16,
-
-    boxShadow: '4px 5px 5px 2px #b8b8b8 ',
-    "&:hover": {
-      color: "#bfbfbf",
-    },
-  },
-}));
-
 export const MuiDrawer = () => {
-  const classes = useStyles1();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
   return (
@@ -67,16 +23,48 @@ export const MuiDrawer = () => {
         anchor='right'
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}>
-        <Box width='200px' role='presentation' textAlign='left' >
-          <Grid className={classes.nav_links} >
-          <Link href="/">
-						<a className={classes.link}>Home</a></Link>
+        <Box width='270px' role='presentation' textAlign='left' >
+          <Grid sx={{
+            marginLeft:"80px",
+            display: "flex",
+            flexDirection: "column"
+          }} >
+            <Link href="/">
+					<Typography variant="drawer" sx={{
+						"&:hover": {
+							color: "blue.primary",
+							borderBottom: "1px solid",
+							borderColor:"blue.primary",
+						}
+					}}><a>Home</a></Typography></Link>
 						<Link href="/about">
-						<a  className={classes.link}>About Us</a></Link>
+						<Typography variant="drawer" sx={{
+							"&:hover": {
+								color: "blue.primary",
+								borderBottom: "1px solid",
+								borderColor:"blue.primary",
+							}
+						}}><a>About Us</a></Typography></Link>
 						<Link href="/contact">
-						<a  className={classes.link}>Contact Us</a></Link>
+						<Typography variant="drawer" sx={{
+							"&:hover": {
+								color: "blue.primary",
+								borderBottom: "1px solid",
+								borderColor:"blue.primary",
+							}
+						}}><a>Contact Us</a></Typography></Link>
 						<Link href="/faq">
-						<a  className={classes.link1}>Sign In</a></Link>
+						<Typography variant="drawer1" sx={{
+							color: "background.default",
+							backgroundColor: 'blue.primary',
+							boxShadow: '4px 5px 5px 2px #b8b8b8 ',
+              width:"120px",
+							"&:hover": {
+								color: "gray.secondary",
+                
+                
+							},
+						}}><a>Sign In</a></Typography></Link>
           </Grid>
         </Box>
       </Drawer>
