@@ -21,6 +21,7 @@ export default function App(){
         <div>
         <Grid  sx={{
             height:"807px",
+            width:"73%",
             backgroundColor: 'gray.main',
             borderRadius:'14px'
         }}>

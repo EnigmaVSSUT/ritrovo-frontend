@@ -10,7 +10,7 @@ const DefaultLayout = ({ children }) => {
 			<Sidebar />
 			<RightBar />
 			<Stack
-				flexGrow={0.647}
+				flexGrow={1}
 				marginLeft={ MAIN_SIDEBAR_WIDTH }
 			>
 				{children}
