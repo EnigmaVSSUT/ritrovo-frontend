@@ -13,6 +13,16 @@ const lightPalette = {
 	secondary: {
 		main: '#D6D6D6'
 	},
+	gray: {
+		main: "#F5F7FB",
+		secondary:"#bfbfbf",
+		border:"#899DBC",
+		post:"#979595",
+		textf:"#FAFBFF"
+	},
+	blue:{
+		primary:"#287EFF"
+	}
 }
 
 export default lightPalette
