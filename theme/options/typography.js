@@ -61,7 +61,7 @@ const typography = {
 			top:'90px',
 			lineHeight:'20px',
 			fontFamily:"poppins",
-			left:'460px'
+			left:'180px'
 			},
 			title3: {
 				flexGrow: "1",
