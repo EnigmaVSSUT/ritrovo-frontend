@@ -52,8 +52,8 @@ export default function App(){
                 marginLeft:{
                     xs:"70%",
                     sm:"78%",
-                    md:"80%",
-                    lg:"84%"
+                    md:"70%",
+                    lg:"80%"
             },
             fontSize:{
                 xs:'10px',
