@@ -15,7 +15,7 @@ const PostCreate = () => {
 
 			<Grid height='730px' sx={{
 				backgroundColor: 'gray.main',
-				width: "73%",
+				width: "50rem",
 				borderRadius: 5,
 				padding: 0,
 				margin: 0
@@ -27,7 +27,7 @@ const PostCreate = () => {
 					border: '1px solid',
 					borderColor: "gray.post",
 					borderRadius: '20px',
-					left: '19%',
+					left: '9.5rem',
 					textAlign: 'center',
 					top: '40px',
 					backgroundColor: 'background.default',
@@ -51,7 +51,7 @@ const PostCreate = () => {
 					position: 'relative',
 					width: 569,
 					borderRadius: '15px',
-					left: '19%',
+					left: '9.5rem',
 					textAlign: 'center',
 					top: '105px',
 					border: '1px solid',
@@ -73,7 +73,7 @@ const PostCreate = () => {
 					fontWeight: '500',
 					fontSize: '14px',
 					padding: 1,
-					right: '46.7%',
+					right: '24rem',
 					top: "40%",
 					width: 120,
 					height: 40,
