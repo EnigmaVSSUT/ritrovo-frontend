@@ -15,7 +15,7 @@ const PostCreate = () => {
 
 			<Grid height='730px' sx={{
 				backgroundColor: 'gray.main',
-				width: "50rem",
+				width: "71%",
 				borderRadius: 5,
 				padding: 0,
 				margin: 0
