@@ -17,7 +17,8 @@ const Sidebar = () => {
 			PaperProps={{
                 sx:{
                     backgroundColor:"background.default",
-                    width:"250px"
+                    width:"250px",
+					"&.MuiDrawer-paper": { borderWidth: 0 }
                 }}}
 			>
 			<Toolbar sx={{marginTop:"15px",marginLeft:"-10px"}}>
