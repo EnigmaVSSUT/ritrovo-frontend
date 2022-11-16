@@ -14,7 +14,10 @@ function MyApp({ Component, pageProps }) {
 			<CssBaseline />
 			{ getLayout(<Component {...pageProps} />) }
 		</RitrovoThemeContext>
+        
+		
+	
 	)
 }
 
-export default MyApp
+export default MyApp;
