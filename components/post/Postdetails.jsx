@@ -5,7 +5,7 @@ import Comment from "./Comment"
 
 const Postdetails = () => {
     return ( 
-        <Card sx={{ maxWidth: 800}}>
+        <Card>
             <CardHeader
             avatar={
               <Avatar alt="Enigma logo" src="./enigmaa.png" />

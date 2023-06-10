@@ -23,7 +23,7 @@ const HeroContent = () => {
 					Get Started</Button>
 				</Box>
 				<Box sx={{flex:"1.25"}}>
-					<img src="./54950.jpg" alt="hero img" style={{maxWidth:"100%",marginBottom:"2rem"}}/>
+					<Box component="img" src="./54950.jpg" alt="hero img" sx={{maxWidth:"100%",marginBottom:"2rem"}}/>
 				</Box>
 				</CustomBox>
 			 </Container>
