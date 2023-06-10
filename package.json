@@ -20,7 +20,9 @@
     "next-auth": "^4.10.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-read-more-read-less": "^1.0.7",
+    "react-text-more-less": "^0.4.2"
   },
   "devDependencies": {
     "eslint": "8.21.0",
