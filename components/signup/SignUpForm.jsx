@@ -49,7 +49,7 @@ const SignUpForm = () => {
 		<>
 			<Box sx={{ minHeight: "80vh", margin: '0 40px' }}>
 				<Toolbar>
-					<img src="./logo.png" alt="" style={{ height: '40px', width: '40px' }} />
+					<Box component="img" src="./logo.png" alt="" sx={{ height: '40px', width: '40px' }} />
 					<Label sx={{
 						fontWeight: '600',
 						fontSize: '32px',
@@ -88,9 +88,9 @@ const SignUpForm = () => {
 							<Typography>Already have an account? <a href="#">sign in</a></Typography>
 						</Box>
 					</Box>
-					<Ibox>
-						<img src="./SignUp/signup.png" alt="" style={{ maxWidth: "100%", marginBottom: "2.5rem", top: '20px' }} />
-					</Ibox>
+					<Box>
+						<Box component="img" src="./SignUp/signup.png" alt="" sx={{ maxWidth: "100%", marginBottom: "2.5rem", top: '20px' }} />
+					</Box>
 				</CustomBox>
 			</Box>
 		</>

@@ -1,5 +1,5 @@
 import { CssBaseline } from "@mui/material";
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import { RitrovoThemeContext } from "../theme/RitrovoThemeContext";
 
 function MyApp({ Component, pageProps }) {
