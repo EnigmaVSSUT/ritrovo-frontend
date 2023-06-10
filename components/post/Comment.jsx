@@ -11,7 +11,7 @@ import { Paper,TextField,Button } from '@mui/material';
 export default function AlignItemsList() {
   return (
     <div>
-    <List sx={{ width: '100%', maxWidth: "1000px", bgcolor: 'background.paper',maxHeight:200,overflow:'scroll' }}>
+    <List sx={{ width: '100%', bgcolor: 'background.paper',maxHeight:200,overflow:'scroll' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />

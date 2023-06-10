@@ -8,14 +8,14 @@ const DefaultLayout = ({ children }) => {
 			direction='row'
 >
 			<Sidebar />
-			<RightBar />
 			<Stack
 				flexGrow={1}
 				marginLeft={ MAIN_SIDEBAR_WIDTH }
+				marginRight="350px"
 			>
 				{children}
 			</Stack>
-			
+			<RightBar />
 		</Stack>
 	);
 };
