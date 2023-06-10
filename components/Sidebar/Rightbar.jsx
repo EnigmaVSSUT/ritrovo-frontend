@@ -37,7 +37,8 @@ const RightBar = () => {
                 sx:{
                     backgroundColor:"background.default",
                     width:"345px",
-                    overflowX:"hidden"
+                    overflowX:"hidden",
+                    "&.MuiDrawer-paper": { borderWidth: 0 }
                 }}
             }
             >
