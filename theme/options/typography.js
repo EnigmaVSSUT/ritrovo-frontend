@@ -44,7 +44,7 @@ const typography = {
 			flexGrow: "1",
 			fontSize:20,
 			fontWeight:'600',
-			paddingBottom: "10px",
+			paddingBottom: "10px",			
 			top:'130px',
 			lineHeight:'30px',
 			fontFamily:"poppins"
