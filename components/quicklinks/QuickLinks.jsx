@@ -25,8 +25,9 @@ const quicklinks= ()=>{
                 // width:"%"
             }}
             >
-                {arr.map((item)=>(
+                {arr.map((item, index)=>(
                     <ListItem
+                        key={index}
                         sx={{
                             borderBottom:"2px solid black",
                         }}
