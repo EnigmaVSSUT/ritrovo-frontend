@@ -36,7 +36,7 @@ export default function Feed() {
 
 	return (
 		<Grid item xs={6}>
-			<Card>
+			{/* <Card>
 				<CardMedia
 					component="img"
 					height="194"
@@ -54,7 +54,25 @@ export default function Feed() {
 					<IconButton aria-label="share">
 						<ShareIcon />
 					</IconButton>
-				</CardActions>
+				</CardActions> */}
+				<Card sx={{ borderRadius: '16px', maxWidth: 400 }}>
+  <CardMedia
+    component="img"
+    height="194"
+    image="/static/images/cards/paella.jpg"
+    alt="Community Post"
+  />
+  <CardActions>
+    <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
+      R
+    </Avatar>
+    <IconButton aria-label="add to favorites">
+      <FavoriteIcon />
+    </IconButton>
+  </CardActions>
+</Card>
+
+				
 		</Grid>
 	);
 }
