@@ -36,43 +36,24 @@ export default function Feed() {
 
 	return (
 		<Grid item xs={6}>
-			{/* <Card>
+			<Card sx={{ borderRadius: '16px', maxWidth: 400 }}>
 				<CardMedia
 					component="img"
 					height="194"
 					image="/static/images/cards/paella.jpg"
 					alt="Community Post"
 				/>
-			</Card>
-				<CardActions disableSpacing>
-                    <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                        R
-                    </Avatar>
+				<CardActions>
+					<Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
+						R
+					</Avatar>
 					<IconButton aria-label="add to favorites">
 						<FavoriteIcon />
 					</IconButton>
-					<IconButton aria-label="share">
-						<ShareIcon />
-					</IconButton>
-				</CardActions> */}
-				<Card sx={{ borderRadius: '16px', maxWidth: 400 }}>
-  <CardMedia
-    component="img"
-    height="194"
-    image="/static/images/cards/paella.jpg"
-    alt="Community Post"
-  />
-  <CardActions>
-    <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
-      R
-    </Avatar>
-    <IconButton aria-label="add to favorites">
-      <FavoriteIcon />
-    </IconButton>
-  </CardActions>
-</Card>
+				</CardActions>
+			</Card>
 
-				
+
 		</Grid>
 	);
 }

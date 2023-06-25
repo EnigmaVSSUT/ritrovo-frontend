@@ -1,6 +1,5 @@
 import React from "react";
 import HomeIcon from '@mui/icons-material/Home';
-import SmsIcon from '@mui/icons-material/Sms';
 import PersonIcon from '@mui/icons-material/Person';
 import SettingsIcon from '@mui/icons-material/Settings';
 import FeedIcon from '@mui/icons-material/Feed';
@@ -11,22 +10,12 @@ const MenuOptions = [
 	{
 		title: "Home",
 		icon: <HomeIcon color="#979595" />,
-		link: "",
-	},
-	{
-		title: "Message",
-		icon: <SmsIcon color="#979595" />,
-		link: "messages",
+		link: "home",
 	},
 	{
 		title: "Profile",
-		icon: <PersonIcon color="#979595"/>,
+		icon: <PersonIcon color="#979595" />,
 		link: "profile",
-	},
-	{
-		title: "Settings",
-		icon: <SettingsIcon color="#979595" />,
-		link: "settings",
 	},
 	{
 		title: "Quora VSSUT",
@@ -35,19 +24,24 @@ const MenuOptions = [
 	},
 	{
 		title: "Academics Corner",
-		icon: <SchoolIcon color="#979595"  />,
+		icon: <SchoolIcon color="#979595" />,
 		link: "academics",
 	},
 	{
 		title: "Clubs & Societies",
-		icon: <LightbulbIcon color="#979595"  />,
+		icon: <LightbulbIcon color="#979595" />,
 		link: "clubs",
 	},
 	{
 		title: "The ViSSion",
-		icon: <CreateIcon color="#979595"  />,
+		icon: <CreateIcon color="#979595" />,
 		link: "vission",
+	},
+	{
+		title: "Settings",
+		icon: <SettingsIcon color="#979595" />,
+		link: "settings",
 	},
 ];
 
-export default MenuOptions;
+export default MenuOptions;

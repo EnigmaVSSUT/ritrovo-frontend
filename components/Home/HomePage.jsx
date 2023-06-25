@@ -6,7 +6,7 @@ import EventsList from "./Events/EventsList";
 
 const HomePage = () => {
 	return (
-		<Grid container height="100%">
+		<Grid container height="100%" marginLeft={2}>
 			<Typography variant="h4" sx={{ pl: 2, pb: 2, pr: 2, pt: 5 }}>
 				{" "}
 				<strong>Hello Soham,</strong>{" "}

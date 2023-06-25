@@ -7,7 +7,6 @@ import logo from '../public/logo.png';
 import "@fontsource/poppins";
 
 const Signin = () => {
-
     
 	return (
 		
