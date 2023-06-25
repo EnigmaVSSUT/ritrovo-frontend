@@ -1,100 +1,135 @@
-import React from "react";
-import { useRouter } from 'next/router';
-import DefaultLayout from '../components/layout/DefaultLayout';
-import AddIcon from '@mui/icons-material/Add';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
-import { TextField, Box, Button, Card, } from '@mui/material';
+import { useState } from 'react';
+import { TextField, Box, Button, Stack, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import DefaultLayout from "./../components/layout/DefaultLayout";
 
-const [open, setOpen] = React.useState(false);
-const [fileObjects, setFileObjects] = React.useState([]);
+const dialogTitle = "Upload Image";
 
 const PostCreate = () => {
-    //const router = useRouter();
-    //const app = router.query.page;
+    const [fileObjects, setFileObjects] = useState([]);
+
+    const handleFileInputChange = (event) => {
+        const files = Array.from(event.target.files);
+        const newFileObjs = files.map((file) => ({
+            data: file,
+            preview: URL.createObjectURL(file),
+        }));
+        setFileObjects([...fileObjects, ...newFileObjs]);
+    };
+
+    const handleRemoveImage = (index) => {
+        const updatedFileObjects = [...fileObjects];
+        updatedFileObjects.splice(index, 1);
+        setFileObjects(updatedFileObjects);
+    };
+
     return (
-        <Box 
-        sx={{
-            backgroundColor: 'white',
-            position: 'relative',
-            margin: '50px',
-            }}
-        >
-        <Card
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="200px"
-            sx={{
-                backgroundColor: 'white',
-                margin: '30px',
-                borderRadius: '13px',
-                border: '1px solid black'
-                }}>
-                <span>Upload file</span>
-                <IconButton
-                    style={{ right: '12px', top: '8px', position: 'absolute' }}
-                    onClick={() => setOpen(false)}>
-                    <CloseIcon />
-                </IconButton>
-            <Button variant="contained" color="primary" sx={{ height: 40 }} onClick={() => setOpen(true)}>
-                Add Image
-            </Button>
-        <DropzoneDialogBase
-            dialogTitle={dialogTitle()}
-            acceptedFiles={['image/*']}
-            fileObjects={fileObjects}
-            cancelButtonText={"cancel"}
-            submitButtonText={"submit"}
-            maxFileSize={5000000}
-            open={open}
-            onAdd={newFileObjs => {
-                console.log('onAdd', newFileObjs);
-                setFileObjects([].concat(fileObjects, newFileObjs));
-            }}
-            onDelete={deleteFileObj => {
-                console.log('onDelete', deleteFileObj);
-            }}
-            onClose={() => setOpen(false)}
-            onSave={() => {
-                console.log('onSave', fileObjects);
-                setOpen(false);
-            }}
-            showPreviews={true}
-            showFileNamesInPreview={true}
-            />
-        </Card>
-        <Card
-            sx={{
-                backgroundColor: 'white',
-                margin: '30px',
-                marginBottom: '60px',
-                borderRadius: '13px',
-                border: '1px solid black'
-            }}>
+        <>
+            <Box
+                sx={{
+                    backgroundColor: 'white',
+                    margin: '50px',
+                    padding: '30px',
+                    borderRadius: '5px',
+                    border: '1px solid #3f3f3f',
+                }}
+            >
+                <Stack spacing={2} alignItems="center">
+                    <Stack direction="row" alignItems="center">
+                        <Button
+                            variant="contained"
+                            sx={{
+                                height: 150,
+                                background: "none",
+                                color: "black",
+                                boxShadow: "none",
+                                textTransform: "none",
+                                fontWeight: "900",
+                                '&:hover': {
+                                    background: "none",
+                                    boxShadow: "none",
+                                    cursor: "pointer"
+                                }
+                            }}
+                            onClick={() => {
+                                const fileInput = document.getElementById('file-input');
+                                fileInput.click();
+                            }}
+                        >
+                            Add an Image +
+                        </Button>
+                        <input
+                            id="file-input"
+                            type="file"
+                            style={{ display: 'none' }}
+                            onChange={handleFileInputChange}
+                            multiple
+                        />
+                    </Stack>
+                    <Stack direction="row" spacing={1}>
+                        {fileObjects.map((fileObject, index) => (
+                            <Box
+                                key={index}
+                                sx={{
+                                    position: 'relative',
+                                    display: 'inline-block',
+                                    border: '1px solid black',
+                                    borderRadius: '6px',
+                                    overflow: 'hidden',
+                                }}
+                            >
+                                <img
+                                    src={fileObject.preview}
+                                    alt="Preview"
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                                <IconButton
+                                    sx={{
+                                        position: 'absolute',
+                                        top: '4px',
+                                        right: '4px',
+                                        backgroundColor: 'white',
+                                    }}
+                                    onClick={() => handleRemoveImage(index)}
+                                >
+                                    <CloseIcon />
+                                </IconButton>
+                            </Box>
+                        ))}
+                    </Stack>
+                </Stack>
+            </Box>
             <TextField
-                variant="standard"
-                size="small"
-                sx={{ flex: '1' }}
+                variant="outlined"
+                size="large"
                 placeholder="Write a Caption"
+                multiline
+                rows={3}
+                sx={{
+                    marginLeft: 6,
+                    marginRight: 6,
+                }}
             />
-        </Card>
-        <div>
             <Button
-                    variant="contained" size="small"
-                    sx={{
-                        backgroundColor: '#287EFF',
-                        paddingLeft: '5px',
-                        fontSize: '12px',
-                        fontFamily: 'Poppins',
-                    }}
-                >    
+                variant="contained"
+                size="medium"
+                sx={{
+                    backgroundColor: '#287EFF',
+                    textAlign: "center",
+                    fontSize: '18px',
+                    fontFamily: 'Poppins',
+                    maxWidth: "150px",
+                    marginLeft: 6,
+                    marginTop: 5,
+                    marginBottom: 10
+                }}
+            >
                 Post
             </Button>
-        </div>
+        </>
+    );
+};
 
-    </Box>  
-    )
-}
-PostCreate.getLayout = (app) => <DefaultLayout>{app}</DefaultLayout>;
+PostCreate.getLayout = (page) => <DefaultLayout>{page}</DefaultLayout>;
+
 export default PostCreate;

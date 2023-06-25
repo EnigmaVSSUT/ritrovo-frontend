@@ -21,15 +21,15 @@ export default function App() {
             <Grid sx={{
                 height: "125vh",
                 backgroundColor: 'gray.main',
-                borderRadius: '14px'
+                borderRadius: '14px',
+                marginTop:"40px",
+                marginLeft:"20px"
             }}>
                 <Box sx={{
                     position: 'absolute',
-                    width: '59.9%',
+                    width: '56.7%',
                     height: '193px',
-                    marginLeft: '.5%',
-                    marginRight: '.5%',
-                    top: '0px',
+                    top: '110px',
                     background: 'linear-gradient(86.29deg, #899DBB 4.34%, rgba(137, 157, 187, 0.588687) 48.24%, rgba(137, 157, 187, 0) 105.36%)',
                     borderRadius: '14px'
                 }}>
@@ -72,7 +72,7 @@ export default function App() {
                 <br />
                 <Typography variant="head" sx={{
                     position: "relative",
-                    left: '5px',
+                    left: '20px',
                     top: '60px',
                     paddingBottom: "10px"
                 }}>
@@ -82,7 +82,7 @@ export default function App() {
                 <Typography variant="text" sx={{
                     position: "relative",
                     top: '55px',
-                    left: '5px'
+                    left: '20px'
                 }}>
                     @myuser_id
                 </Typography>
@@ -91,7 +91,7 @@ export default function App() {
                     position: "relative",
                     top: '90px',
                     fontFamily: "poppins",
-                    left: '5px',
+                    left: '20px',
                     paddingBottom: '30px'
                 }}>
                     Branch-Information Technology <br />
