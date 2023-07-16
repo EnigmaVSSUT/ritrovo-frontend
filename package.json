@@ -1,32 +1,35 @@
 {
   "name": "ritrovo-frontend",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@fontsource/plus-jakarta-sans": "^4.5.9",
-    "@fontsource/poppins": "^4.5.10",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.13.5",
-    "@mui/styles": "^5.10.9",
-    "next": "^12.3.3",
-    "next-auth": "^4.10.3",
+    "@fontsource/poppins": "^5.0.5",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "firebase": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-read-more-read-less": "^1.0.7",
-    "react-text-more-less": "^0.4.2"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4",
-    "sass": "^1.54.4"
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "^4.0.1",
+    "eslint": "^8.44.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "vite": "^4.4.0"
   }
 }
