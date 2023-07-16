@@ -11,7 +11,7 @@ import DSW from './pages/dsw';
 import Postcreate from './pages/postcreate';
 import Post from './pages/post';
 import Campuslife from "./pages/campuslife";
-import Antiragging from "./pages/antiragging";
+import Antiragging from "./pages/antiRagging";
 import Profile from './pages/profile';
 import Page from './pages/page';
 
