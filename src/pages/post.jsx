@@ -1,4 +1,4 @@
-import Postdetails from "../components/post/postdetails";
+import Postdetails from "../components/post/Postdetails";
 import DefaultLayout from '../components/layout/DefaultLayout';
 const Post = () => {
     return (
